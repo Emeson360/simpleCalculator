@@ -1,5 +1,89 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-image: linear-gradient(to left, #9b08f0, #7808f0, #06bdf5);
+    line-height: 0.5;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 300px;
+    margin-left: 100px;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: -1px;
+    margin-left: 456px;
+    font-family: sans-serif;
+}
+
+.calci {
+    padding: 100px 0px;
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    transition: 0.25px;
+    text-align: center;
+}
+
+#display {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 245px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    height: 60px;
+}
+
+
+
+.btn {
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    font-family: sans-serif;
+}
+
+.operatorBtn {
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.operatorBtn:hover {
+    background-color: #06bdf5;
+}
+
+#zero {
+    background-color: white;
+    width: 116px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
 }
