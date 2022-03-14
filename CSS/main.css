@@ -1,9 +1,30 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-image: linear-gradient(to left, #9b08f0, #7808f0, #06bdf5);
     line-height: 0.5;
-    position: relative;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt {
+    width: 50%;
+    margin-left: 120px;
+    margin-top: 90px;
+}
+
+.formCont {
+    width: 40%;
+    margin-top: 100px;
 }
 
 h1 {
@@ -11,8 +32,6 @@ h1 {
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 300px;
-    margin-left: 100px;
     font-family: sans-serif;
     text-decoration: underline;
 }
@@ -22,19 +41,14 @@ h2 {
     font-size: 40px;
     font-weight: 700;
     text-transform: capitalize;
-    margin-top: -1px;
-    margin-left: 456px;
+    margin-top: 30px;
+    margin-left: 350px;
     font-family: sans-serif;
 }
 
 .calci {
-    padding: 100px 0px;
-    width: 500px;
-    position: absolute;
-    top: 15%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    transition: 0.25px;
+    width: 50%;
+    margin: auto;
     text-align: center;
 }
 
@@ -86,4 +100,95 @@ h2 {
     font-size: 20px;
     font-family: sans-serif;
     cursor: pointer;
+}
+
+
+/* For laptop */
+
+@media screen and (max-width: 1024px) {
+    .txt {
+        width: 50%;
+        margin-left: 40px;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-left: 290px;
+    }
+
+    .formCont {
+        width: 50%;
+    }
+
+    .calci {
+        width: 300px;
+    }
+}
+
+
+/* For tablet */
+@media screen and (max-width: 768px) {
+    .txt {
+        width: 50%;
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: 220px;
+    }
+
+    .formCont {
+        width: 50%;
+    }
+
+    .calci {
+        width: 300px;
+    }
+}
+
+
+/* For mobile */
+@media screen and (max-width: 425px) {
+
+    .cont {
+        display: block;
+    }
+
+    .txt {
+        width: 100%;
+        padding-left: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+        /* margin: auto; */
+    }
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin-left: 200px;
+    }
+
+    .formCont {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .calci {
+        width: 300px;
+    }
+
+
+
+    
 }
